@@ -1,0 +1,842 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+
+<!-- Meta Pixel Code -->
+<script>
+!function(f,b,e,v,n,t,s)
+{if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+n.queue=[];t=b.createElement(e);t.async=!0;
+t.src=v;s=b.getElementsByTagName(e)[0];
+s.parentNode.insertBefore(t,s)}(window, document,'script',
+'https://connect.facebook.net/en_US/fbevents.js');
+fbq('init', '1408342792952506');
+fbq('track', 'PageView');
+</script>
+<noscript><img height="1" width="1" style="display:none"
+src="https://www.facebook.com/tr?id=1408342792952506&ev=PageView&noscript=1"
+/></noscript>
+<!-- End Meta Pixel Code -->
+
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=AW-17934715972"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'AW-17934715972');
+</script>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Pasteles Decorados en Casa</title>
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Arial, Helvetica, sans-serif;
+}
+
+body{
+background:linear-gradient(135deg,#eef2f7,#f9fbff);
+display:flex;
+align-items:center;
+justify-content:center;
+min-height:100vh;
+padding:30px;
+flex-direction:column;
+}
+
+/* CONTEÚDO SUPERIOR (SEM CARD) */
+
+.hero-title{
+font-size:20px;
+font-weight:bold;
+color:#1b1b1b;
+margin-bottom:18px;
+text-align:center;
+max-width:360px;
+}
+
+.mockup{
+width:100%;
+max-width:344px;
+height:192px;
+object-fit:cover;
+border-radius:12px;
+margin-bottom:18px;
+display:block;
+}
+
+.hero-btn{
+display:inline-block;
+background:linear-gradient(90deg,#ff9800,#ff6f00);
+color:#fff;
+padding:14px 22px;
+border-radius:12px;
+font-size:16px;
+font-weight:bold;
+text-decoration:none;
+margin-bottom:22px;
+transition:.3s;
+}
+
+.hero-btn:hover{
+transform:scale(1.05);
+}
+
+.hero-text{
+font-size:16px;
+color:#000;
+line-height:1.5;
+max-width:360px;
+text-align:center;
+margin-bottom:10px;
+}
+
+/* LAYOUT */
+
+.container{
+display:flex;
+gap:30px;
+align-items:flex-start;
+flex-wrap:wrap;
+justify-content:center;
+}
+
+/* LARGURA PADRÃO */
+
+.advantages-column,
+.side-column,
+.card{
+width:100%;
+max-width:360px;
+}
+
+/* COLUNA VANTAGENS */
+
+.advantages-column{
+display:flex;
+flex-direction:column;
+gap:15px;
+}
+
+.column-title{
+font-size:22px;
+font-weight:bold;
+color:#1b1b1b;
+margin-bottom:5px;
+text-align:center;
+}
+
+.tip-card{
+background:#f3f4f6;
+border-left:6px solid #2ecc71;
+border-radius:12px;
+padding:14px;
+box-shadow:0 8px 18px rgba(0,0,0,0.08);
+font-size:14px;
+color:#444;
+}
+
+/* COLUNA CARDS CENTRAIS */
+
+.side-column{
+display:flex;
+flex-direction:column;
+gap:15px;
+margin-bottom:25px;
+}
+
+.mini-card{
+background:#fff;
+border-radius:14px;
+overflow:hidden;
+box-shadow:0 10px 25px rgba(0,0,0,0.12);
+transition:.3s;
+}
+
+.mini-card:hover{
+transform:translateY(-4px);
+}
+
+.mini-card img{
+width:100%;
+height:140px;
+object-fit:cover;
+}
+
+.mini-content{
+padding:14px;
+font-size:16px;
+line-height:1.4;
+color:#000;
+text-align:center;
+}
+
+/* CARD PRINCIPAL */
+
+.card{
+background:#fff;
+border-radius:18px;
+overflow:hidden;
+box-shadow:0 25px 60px rgba(0,0,0,0.18);
+transition:.3s;
+position:relative;
+}
+
+.card:hover{
+transform:translateY(-6px);
+}
+
+.badge{
+position:absolute;
+background:#ff9800;
+color:#fff;
+font-size:12px;
+padding:6px 12px;
+border-radius:30px;
+margin:15px;
+font-weight:bold;
+}
+
+.card img{
+width:100%;
+display:block;
+}
+
+.content{
+padding:22px;
+}
+
+.title{
+font-size:22px;
+font-weight:bold;
+margin-bottom:10px;
+color:#1b1b1b;
+text-align:center;
+}
+
+.desc{
+font-size:14px;
+color:#555;
+margin-bottom:14px;
+text-align:center;
+}
+
+.benefits{
+margin-bottom:15px;
+}
+
+.benefits li{
+list-style:none;
+font-size:14px;
+margin-bottom:6px;
+color:#333;
+}
+
+.bonus{
+background:#fff8e1;
+border-left:5px solid #ff9800;
+padding:10px;
+border-radius:8px;
+font-size:13px;
+color:#444;
+margin-bottom:14px;
+text-align:center;
+}
+
+.stars{
+color:#f5a623;
+margin-bottom:12px;
+text-align:center;
+}
+
+.price-old{
+text-decoration:line-through;
+color:#aaa;
+font-size:14px;
+text-align:center;
+}
+
+.price{
+font-size:32px;
+font-weight:bold;
+margin:4px 0 10px;
+color:#000;
+text-align:center;
+}
+
+.guarantee{
+background:#e8f5e9;
+padding:10px;
+border-radius:8px;
+font-size:13px;
+color:#2e7d32;
+margin-bottom:14px;
+text-align:center;
+}
+
+.btn{
+display:block;
+text-align:center;
+background:linear-gradient(90deg,#2ecc71,#27ae60);
+color:#fff;
+padding:16px;
+border-radius:12px;
+font-size:17px;
+font-weight:bold;
+text-decoration:none;
+transition:.3s;
+animation:pulse 2s infinite;
+margin-top:15px;
+margin-bottom:14px;
+}
+
+.btn:hover{
+transform:scale(1.04);
+}
+
+@keyframes pulse{
+0%{box-shadow:0 0 0 0 rgba(46,204,113,.6)}
+70%{box-shadow:0 0 0 10px rgba(46,204,113,0)}
+100%{box-shadow:0 0 0 0 rgba(46,204,113,0)}
+}
+
+.payment{
+text-align:center;
+font-size:12px;
+color:#777;
+margin-top:10px;
+}
+
+.timer{
+text-align:center;
+font-size:13px;
+color:#e53935;
+font-weight:bold;
+margin-top:8px;
+}
+
+.scarcity{
+text-align:center;
+font-size:12px;
+color:#888;
+margin-top:5px;
+}
+
+@media (max-width:900px){
+.container{
+flex-direction:column;
+align-items:center;
+}
+}
+
+</style>
+</head>
+
+<body>
+
+<div class="hero-title">
+RECETAS FÁCILES PARA CREAR PASTELES INCREÍBLES Y SORPRENDER A TODOS, ¡INCLUSO SI ERES PRINCIPIANTE!
+</div>
+
+<img src="img/mockup.jpg" class="mockup">
+
+<a href="https://pay.hotmart.com/X107538089J?checkoutMode=10"
+class="hero-btn"
+target="_blank">
+Quiero esta Colección
+</a>
+
+<div class="hero-text">
+Si quieres ahorrar tiempo, evitar errores y empezar con todo listo, ¡esta colección es perfecta para ti!
+</div>
+
+<div class="side-column">
+
+<div style="width:100%; height:2px; background:#ddd; margin:10px 0;"></div>
+
+<div class="column-title" style="text-align:center; font-size:24px; font-weight:bold; margin:10px 0;">
+  🎂 Pasteles Decorados en Casa
+</div>
+
+<div class="hero-text">
+Aprenderás desde las bases perfectas hasta técnicas profesionales que impresionan a cualquier cliente o invitado.
+</div>
+
+<div class="mini-card" style="background-color:#FCE4EC;">
+<div style="display:flex; align-items:center;">
+<img src="img/1.png" style="width:120px; height:100%; object-fit:cover;">
+<div class="mini-content" style="text-align:center;">
+<b>Pasteles Decorados en Casa</b><br>
+Aprende a armar y decorar pasteles con acabado profesional.
+</div>
+</div>
+</div>
+
+<div class="column-title" style="text-align:center; font-size:20px; font-weight:bold; margin:10px 0;">
+  📚 +4 Bonos adicionales
+</div>
+
+<div class="mini-card" style="background-color:#E8F5E9;">
+<div style="display:flex; align-items:center;">
+<img src="img/2.png" style="width:120px; height:100%; object-fit:cover;">
+<div class="mini-content" style="text-align:center;">
+<b>Tabla de Ganaches</b><br>
+Proporciones exactas para cada tipo de relleno y cobertura.
+</div>
+</div>
+</div>
+
+
+<div class="mini-card" style="background-color:#FCE4EC;">
+<div style="display:flex; align-items:center;">
+<img src="img/3.png" style="width:120px; height:100%; object-fit:cover;">
+<div class="mini-content" style="text-align:center;">
+<b>Guía de Coberturas</b><br>
+Descubre coberturas perfectas para cada tipo de pastel.
+</div>
+</div>
+</div>
+
+<div class="mini-card" style="background-color:#E8F5E9;">
+<div style="display:flex; align-items:center;">
+<img src="img/4.png" style="width:120px; height:100%; object-fit:cover;">
+<div class="mini-content" style="text-align:center;">
+<b>Atemperado de Chocolate</b><br>
+Aprende la técnica correcta para lograr brillo y textura perfectos.
+</div>
+</div>
+</div>
+
+<div class="mini-card" style="background-color:#FCE4EC;">
+<div style="display:flex; align-items:center;">
+<img src="img/5.png" style="width:120px; height:100%; object-fit:cover;">
+<div class="mini-content" style="text-align:center;">
+<b>Ganache Perfecta</b><br>
+Rellenos cremosos y estables para cualquier aplicación.
+</div>
+</div>
+</div>
+
+<div style="width:100%; height:2px; background:#ddd; margin:10px 0;"></div>
+
+<div class="column-title">
+Este material es para ti si:
+</div>
+
+<div style="max-width:600px;margin:0px auto;padding:25px;border-radius:15px;background:linear-gradient(135deg,#fff8f0,#ffe5d0);box-shadow:0 8px 20px rgba(0,0,0,0.1);font-family:Arial,sans-serif;">
+
+  <ul style="list-style:none;padding:0;margin:0;">
+    <li style="margin-bottom:12px;font-size:16px;color:#333;text-align:justify;">
+      ✔️ Quieres hacer pasteles caseros deliciosos sin complicaciones.
+    </li>
+    <li style="margin-bottom:12px;font-size:16px;color:#333;text-align:justify;">
+      ✔️ Quieres convertir tu cocina en un ingreso extra o negocio rentable.
+    </li>
+    <li style="margin-bottom:12px;font-size:16px;color:#333;text-align:justify;">
+      ✔️ Quieres sorprender a tu familia con pasteles esponjosos.
+    </li>
+    <li style="margin-bottom:12px;font-size:16px;color:#333;text-align:justify;">
+      ✔️ Te encantan las recetas prácticas para el día a día y fines de semana.
+    </li>
+    <li style="margin-bottom:12px;font-size:16px;color:#333;text-align:justify;">
+      ✔️ Deseas ahorrar preparando pasteles en casa.
+    </li>
+  </ul>
+
+</div>
+
+
+<div style="width:100%; height:2px; background:#ddd; margin:10px 0;"></div>
+
+<div class="column-title">
+Ventajas de la colección Pasteles Decorados en Casa
+</div>
+
+<div class="mini-card">
+  <div style="display:flex; align-items:center; justify-content:center; flex-direction:column;">
+    <div style="font-size:28px; margin-bottom:0px; margin-top:10px;">🎂</div>
+    <div class="mini-content" style="text-align:center;">
+      Aprende a hacer pasteles decorados en casa con métodos simples y profesionales.
+    </div>
+  </div>
+</div>
+
+<div class="mini-card">
+  <div style="display:flex; align-items:center; justify-content:center; flex-direction:column;">
+    <div style="font-size:28px; margin-bottom:0px; margin-top:10px;">💸</div>
+    <div class="mini-content" style="text-align:center;">
+      Ahorra tiempo y dinero evitando errores comunes en la repostería casera.
+    </div>
+  </div>
+</div>
+
+<div class="mini-card">
+  <div style="display:flex; align-items:center; justify-content:center; flex-direction:column;">
+    <div style="font-size:28px; margin-bottom:0px; margin-top:10px;">🍫</div>
+    <div class="mini-content" style="text-align:center;">
+      Accede a recetas, coberturas y ganaches probadas y fáciles de aplicar.
+    </div>
+  </div>
+</div>
+
+<div class="mini-card">
+  <div style="display:flex; align-items:center; justify-content:center; flex-direction:column;">
+    <div style="font-size:28px; margin-bottom:0px; margin-top:10px;">🚀</div>
+    <div class="mini-content" style="text-align:center;">
+      Convierte tu producción de pasteles en un ingreso extra o negocio rentable.
+    </div>
+  </div>
+</div>
+
+</div>
+
+<a href="https://pay.hotmart.com/X107538089J?checkoutMode=10"
+class="hero-btn"
+target="_blank">
+Sí, quiero ganar dinero
+</a>
+
+<div class="side-column">
+
+<div class="column-title">
+¿Para quién es esta colección?
+</div>
+
+
+<div class="mini-card">
+<img src="img/bolo1.webp">
+<div class="mini-content">
+Principiantes que quieren aprender a hacer pasteles en casa desde cero.
+</div>
+</div>
+
+<div class="mini-card">
+<img src="img/bolo2.webp">
+<div class="mini-content">
+Reposteros caseros que desean mejorar técnicas y resultados.
+</div>
+</div>
+
+<div class="mini-card">
+<img src="img/bolo3.webp">
+<div class="mini-content">
+Quienes buscan practicidad con recetas y guías fáciles de seguir.
+</div>
+</div>
+
+<div class="mini-card">
+<img src="img/bolo4.webp">
+<div class="mini-content">
+Personas que quieren vender pasteles y aumentar sus ingresos.
+</div>
+</div>
+
+</div>
+
+<a href="https://pay.hotmart.com/X107538089J?checkoutMode=10"
+class="hero-btn"
+target="_blank">
+¡Comprar con descuento!
+</a>
+
+<div class="side-column">
+
+<div class="column-title">
+¡BONOS EXCLUSIVOS POR TIEMPO LIMITADO!
+</div>
+
+<div class="hero-text">
+Al adquirir Pasteles Decorados en Casa hoy, recibirás totalmente GRATIS estos 2 regalos exclusivos que complementarán TU COCINA.
+</div>
+
+<div class="mini-card" style="background-color:#A5D6A7;">
+<div style="display:flex; align-items:center;">
+<img src="img/7.png" style="width:120px; height:100%; object-fit:cover;">
+<div class="mini-content" style="text-align:center;">
+<b>Utensilios Esenciales</b><br>
+Muestra cuáles herramientas son realmente necesarias.
+</div>
+</div>
+</div>
+
+<div style="text-align:center; margin:10px 0;">
+  <span style="text-decoration: line-through; color:#999; font-size:18px;">
+    DE US$ 3,90
+  </span>
+  <br>
+  <span style="color:#2E7D32; font-size:28px; font-weight:bold;">
+    Por US$ 0
+  </span>
+</div>
+
+<div class="mini-card" style="background-color:#A5D6A7;">
+<div style="display:flex; align-items:center;">
+<img src="img/8.png" style="width:120px; height:100%; object-fit:cover;">
+<div class="mini-content" style="text-align:center;">
+<b>Ingredientes Esenciales</b><br>
+Enseña cuáles ingredientes son indispensables en la repostería.
+</div>
+</div>
+</div>
+
+
+<div style="text-align:center; margin:10px 0;">
+  <span style="text-decoration: line-through; color:#999; font-size:18px;">
+    DE US$ 3,90
+  </span>
+  <br>
+  <span style="color:#2E7D32; font-size:28px; font-weight:bold;">
+    Por US$ 0
+  </span>
+</div>
+
+<div style="max-width:700px;margin:10px auto;padding:20px;border-radius:15px;background:#ffffff;box-shadow:0 8px 25px rgba(0,0,0,0.1);font-family:Arial,sans-serif;display:flex;flex-wrap:wrap;align-items:center;gap:10px;">
+
+  <!-- Espaço para imagem -->
+  <div style="flex:1.2;min-width:250px;">
+    <img src="img/mockup.png" alt="Pasteles Decorados en Casa" style="width:100%;height:100%;object-fit:cover;border-radius:12px;">
+  </div>
+
+  <!-- Texto -->
+  <div style="flex:1.8;min-width:250px;text-align:center;">
+    
+    <div style="font-size:22px;font-weight:bold;color:#d35400;margin-bottom:12px;">
+      ¿Qué incluye Pasteles Decorados en Casa?
+    </div>
+
+    <p style="font-size:16px;color:#333;line-height:1.6;margin-bottom:12px;">
+      <strong>Pasteles Decorados en Casa</strong> es tu ebook principal, con todo lo que necesitas para hacer y vender pasteles. Junto a él recibes <strong>4 ebooks adicionales</strong> de la colección, incluidos sin costo extra.
+    </p>
+
+    <p style="font-size:16px;color:#333;line-height:1.6;">
+      Además, por tiempo limitado, el material incluye <strong>2 ebooks de bono</strong>, ofreciendo aún más apoyo para el día a día en la repostería.
+    </p>
+
+  </div>
+
+</div>
+
+<div style="width:100%; height:2px; background:#ddd; margin:0px 0;"></div>
+
+</div>
+
+<div class="hero-title">
+¿Alguna vez te has sentido perdido al crear Pasteles Increíbles?
+</div>
+
+<div class="hero-text" style="margin-bottom:25px;">
+¿Sin saber por dónde empezar o por qué el resultado no sale como esperabas? Muchas personas enfrentan dificultades con recetas, coberturas y acabados, pero con la orientación correcta es posible ganar confianza, dominar las técnicas y transformar cada pastel en un resultado hermoso y delicioso.
+</div>
+
+<div class="card">
+
+<div class="badge">👩‍🍳 7 eBooks Exclusivos</div>
+
+<img src="img/mockup.jpg">
+
+<div class="content">
+
+<div class="title">
+Pasteles Decorados en Casa
+</div>
+
+<div class="desc">
+Domina la repostería profesional y transforma tu habilidad en ingresos.
+</div>
+
+<ul class="benefits">
+<li>✔ <strong>Pasteles Decorados en Casa</strong> (principal)</li>
+</ul>
+
+<div style="text-align:center; font-size:13px; font-weight:bold; color:#888; text-transform:uppercase; letter-spacing:.5px; margin:10px 0 6px;">
++ 4 ebooks exclusivos de bono
+</div>
+
+<ul class="benefits">
+<li>✔ Tabla de Ganache</li>
+<li>✔ Guía de Coberturas</li>
+<li>✔ Atemperado de Chocolate</li>
+<li>✔ Ganache Perfecta</li>
+</ul>
+
+<div style="text-align:center; font-size:13px; font-weight:bold; color:#888; text-transform:uppercase; letter-spacing:.5px; margin:10px 0 6px;">
++ 2 bonos por tiempo limitado
+</div>
+
+<ul class="benefits">
+<li>✔ Bono 1: Utensilios Esenciales</li>
+<li>✔ Bono 2: Ingredientes Esenciales</li>
+</ul>
+
+<div class="stars">
+★★★★★ 5.0 Calificación de los alumnos
+</div>
+
+<div class="price-old">
+De US$ 29,90
+</div>
+
+<div class="price">
+US$ 14,90
+</div>
+
+<a href="https://pay.hotmart.com/X107538089J?checkoutMode=10"
+class="btn"
+target="_blank">
+¡Quiero ganar dinero con Pasteles!
+</a>
+
+<div class="guarantee">
+✔ Garantía incondicional de 7 días o te devolvemos tu dinero
+</div>
+
+<div class="payment">
+🔒 Pago 100% seguro • Hotmart
+</div>
+
+<div class="timer">
+⏰ La oferta expira en <span id="countdown">15:00</span>
+</div>
+
+<script>
+(function(){
+  var duration = 15 * 60; // 15 minutos em segundos
+  var el = document.getElementById('countdown');
+  var end = Date.now() + duration * 1000;
+
+  function tick(){
+    var remaining = Math.max(0, Math.round((end - Date.now()) / 1000));
+    var min = Math.floor(remaining / 60);
+    var sec = remaining % 60;
+    el.textContent = String(min).padStart(2, '0') + ':' + String(sec).padStart(2, '0');
+    if(remaining <= 0){
+      clearInterval(interval);
+    }
+  }
+
+  tick();
+  var interval = setInterval(tick, 1000);
+})();
+</script>
+
+<div class="scarcity">
+⚡ Oferta promocional por tiempo limitado
+</div>
+
+</div>
+</div>
+
+</div>
+
+<div class="column-title" style="margin: 25px 0 20px 0; font-size: 26px; color:#1a1a1a; text-align:center;">
+  Garantía de 7 Días
+</div>
+
+<div class="hero-text" style="text-align:center;">
+
+  <p style="margin-bottom: 10px;">
+    <strong style="font-size: 22px; color:#2c2c2c;">
+      ¿Aún tienes dudas? Tranquilo, tu compra está 100% protegida.
+    </strong>
+  </p>
+
+  <div style="background:#fff; padding:25px; border-radius:12px; box-shadow:0 4px 15px rgba(0,0,0,0.08); margin:25px 0; border-left:5px solid #f4c542;">
+
+  <p style="margin:0; color:#555; line-height:1.7; font-size:16px;">
+    Si por cualquier motivo el contenido que recibas no cumple con lo prometido, 
+    tienes hasta <strong style="color:#000;">7 días</strong> para solicitar el reembolso completo, 
+    sin preguntas ni complicaciones. Recuerda que tu acceso es 
+    <strong style="color:#000;">de por vida</strong>, y constantemente añadimos nuevos materiales.
+  </p>
+
+</div>
+
+<div class="hero-text" style="text-align:center;">
+
+  <p style="margin-bottom: 15px;">
+    <strong style="font-size: 24px; color:#2c2c2c;">
+      💬 Testimonio de Cliente
+    </strong>
+  </p>
+
+  <div style="background:#ffffff; padding:30px; border-radius:15px; box-shadow:0 8px 25px rgba(0,0,0,0.08); margin:25px 0; border-left:6px solid #28a745; max-width:600px; margin-left:auto; margin-right:auto;">
+
+    <p style="margin:0 0 15px 0; color:#444; line-height:1.8; font-size:16px; font-style:italic;">
+      “¡Me encantó el contenido de pasteles decorados en casa! Fácil de aplicar, con ingredientes accesibles y dentro de mi presupuesto. Realmente vale mucho la pena.”
+    </p>
+
+    <p style="margin:0; font-size:14px; color:#888;">
+      — <strong style="color:#2c2c2c;">Maria Rosenilda</strong> • 22 de agosto
+    </p>
+
+  </div>
+
+</div>
+
+<div style="width:100%; height:2px; background:#ddd; margin:0px 0;"></div>
+
+</div>
+
+<div style="text-align:center; margin: 25px 0 20px 0;">
+
+  <div class="column-title" style="font-size: 24px;">
+    Preguntas Frecuentes:
+  </div>
+
+</div>
+
+<div class="hero-text">
+<p style="margin-bottom: 10px;"><strong style="font-size: 22px;">¿Cómo funciona el pago?</strong></p>
+<p style="margin-bottom: 25px;">
+Aceptamos tarjetas de crédito, débito y otros métodos de pago según tu país.
+El acceso es inmediato después de la confirmación del pago.
+El precio es único de US$ 14,90 sin mensualidades.
+</p>
+
+<p style="margin-bottom: 10px;"><strong style="font-size: 22px;">¿Cómo puedo utilizar el material?</strong></p>
+<p style="margin-bottom: 25px;">
+Tendrás acceso de por vida al ebook digital,
+con permiso para imprimirlo para uso personal,
+además de recibir actualizaciones gratuitas del contenido.
+</p>
+
+<p style="margin-bottom: 10px;"><strong style="font-size: 22px;">¿Cómo recibiré el producto?</strong></p>
+<p style="margin-bottom: 25px;">
+Después de la confirmación del pago, recibirás un correo electrónico
+con las instrucciones de acceso al ebook a través de la plataforma Hotmart.
+El correo será enviado a la dirección registrada.
+</p>
+
+<p style="margin-bottom: 10px;"><strong style="font-size: 22px;">¿La plataforma es segura?</strong></p>
+<p style="margin-bottom: 25px;">
+Sí, utilizamos Hotmart, una plataforma internacional reconocida
+en el mercado de productos digitales.
+Todos los datos personales y financieros están encriptados y protegidos.
+</p>
+
+</div>
+
+<div style="background-color: #000; color: #fff; border-radius: 10px; padding: 20px; width: 100%; margin: 5px 0; box-sizing: border-box; text-align: center; font-size: 13px;">
+  
+  <p style="margin-bottom: 10px;">
+    © 2026 IuleApp - Todos los derechos reservados.
+  </p>
+
+  <p style="margin-bottom: 0;">
+    Todo el contenido de los ebooks es propiedad exclusiva de IuleApp. Su reproducción, total o parcial, está prohibida sin autorización previa.
+  </p>
+
+</div>
+
+</body>
+</html>
